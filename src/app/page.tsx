@@ -11,7 +11,7 @@ export default function Home() {
   const onToggle = useCallback(() => {
     setShow(s => !s)
   }, [])
-  
+
   const onConfirm = useCallback(async () => {
     await resolveAfter(2000);
   }, []);
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className="">
       <h2>Implemenet a modal</h2>
-      <button className="p-1 rounded-md border border-slate-100 outline-none" onClick={onToggle}>Open Modal</button>
+      <button className="p-1 rounded-md border border-slate-100  bg-slate-50 outline-none" onClick={onToggle}>Open Modal</button>
       <Dialog
         open={show}
         title={<div>this is title</div>}
